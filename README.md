@@ -99,7 +99,7 @@ Any request to a route not listed above returns:
 
 The project is deployed on [Render](https://render.com):
 
-🔗 **Deployed app:** `<>`
+🔗 **Deployed app:** `<https://nodejs-hw-1shl.onrender.com/>`
 
 🔗 **Source code:**
 `https://github.com/viktoriia-dmytryk/nodejs-hw/tree/01-express`
