@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viktoriia-dmytryk/nodejs-hw.git"
+  },
+  "keywords": [],
+  "author": "Viktoriia Dmytryk",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/viktoriia-dmytryk/nodejs-hw/issues"
+  },
+  "homepage": "https://github.com/viktoriia-dmytryk/nodejs-hw#readme",
+  "devDependencies": {
+    "eslint": "^10.7.0",
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pino-http": "^11.0.0"
+  }
+}
