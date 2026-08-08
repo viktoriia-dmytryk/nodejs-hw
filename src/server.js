@@ -7,6 +7,7 @@ import { notFoundHandler } from './middleware/notFoundHandler.js';
 import { errorHandler } from './middleware/errorHandler.js';
 import notesRoutes from './routes/notesRoutes.js';
 import dns from 'node:dns';
+import { errors } from 'celebrate';
 
 dns.setServers(['8.8.8.8', '8.8.4.4']);
 
@@ -18,6 +19,8 @@ app.use(express.json());
 app.use(cors());
 
 app.use(notesRoutes);
+
+app.use(errors);
 
 app.use(notFoundHandler);
 
