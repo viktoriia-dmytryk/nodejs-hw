@@ -20,7 +20,7 @@ app.use(cors());
 
 app.use(notesRoutes);
 
-app.use(errors);
+app.use(errors());
 
 app.use(notFoundHandler);
 
