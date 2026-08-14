@@ -5,6 +5,11 @@ const noteSchema = new Schema(
   {
     title: { type: String, required: true, trim: true },
     content: { type: String, required: false, trim: true, default: '' },
+    userId: {
+      type: Schema.Types.ObjectId,
+      ref: 'User',
+      required: true,
+    },
     tag: {
       type: String,
       required: false,
