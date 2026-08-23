@@ -24,3 +24,23 @@ export const loginUserSchema = {
     }),
   }),
 };
+
+export const requestResetEmailSchema = {
+  [Segments.BODY]: Joi.object({
+    email: Joi.string().email().required().messages({
+      'string.email': 'Email must be a valid email address',
+      'any.required': 'Email is required',
+    }),
+  }),
+};
+
+export const resetPasswordSchema = {
+  [Segments.BODY]: Joi.object({
+    password: Joi.string().required().messages({
+      'any.required': 'Password is required',
+    }),
+    token: Joi.string().required().messages({
+      'any.required': 'Token is required',
+    }),
+  }),
+};
